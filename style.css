@@ -1,0 +1,676 @@
+* {
+    margin: 0%;
+    padding: 0%;
+}
+
+.ttext {
+    display: none;
+}
+
+body {
+    color: #666;
+    background-color: rgb(246, 246, 246);
+    font-family: sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+
+.head {
+    height: 100px;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
+}
+
+.head .divin {
+    margin: 0 15px;
+}
+
+.head .logo img {
+    height: 40px;
+}
+
+.head .cart img {
+    height: 21px;
+}
+
+
+.pc {
+    height: 100px;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    justify-content: space-between;
+}
+
+.head-kid {
+    margin: 20px;
+}
+
+.slider,
+img {
+    width: 100%;
+}
+
+/* Keyframes for sliding up animation */
+@keyframes slideUp {
+    0% {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.text {
+    position: absolute;
+    bottom: 15%;
+    left: 65%;
+    padding: 10px 20px;
+    transform: translateX(-50%);
+    /* Center horizontally */
+    text-align: center;
+}
+
+#t1,
+#t2,
+#t3,
+#button {
+    opacity: 0;
+    animation: slideUp 2s ease forwards;
+}
+
+/* Stagger the animations */
+#t1 {
+    font-size: 1.8rem;
+    margin-bottom: 40px;
+    animation-delay: 0.3s;
+    /* Start slightly later */
+}
+
+#t2 {
+    font-size: 2.2rem;
+    margin-bottom: 40px;
+    animation-delay: 0.6s;
+    /* Start after t1 */
+}
+
+#t3 {
+    margin-bottom: 40px;
+    animation-delay: 0.9s;
+    /* Start after t2 */
+}
+
+#button {
+    height: 40px;
+    width: 100px;
+    animation-delay: 1.2s;
+    /* Start after t3 */
+}
+
+#hero2-box-1pic {
+    height: 300px;
+    width: auto;
+}
+
+#hero2-box-2pic {
+    height: 300px;
+    width: auto;
+}
+
+.hero2 {
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 500px;
+    width: 100%;
+}
+
+.head-hero3 {
+    display: flex;
+    justify-content: center;
+    margin: 100px;
+}
+
+.hero3 {
+    display: flex;
+    justify-content: center;
+    gap: 35px;
+    margin: 20px;
+}
+
+.box-hero3 {
+    height: 350px;
+    width: 250px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    transition: transform 0.3s ease;
+}
+
+.box-hero3:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 8px rgba(0, 0, 0, 0.2);
+}
+
+#box-width-one {
+    height: 300px;
+    width: auto;
+}
+
+#box-nonwidth-one {
+    height: 200px;
+    width: auto;
+}
+
+
+.inbox {
+    margin: 10px;
+}
+
+#inbox-features,
+tools {
+    margin: 10px;
+}
+
+#inbox-features {
+    background-color: rgb(246, 246, 246);
+}
+
+#inbox-h4 {
+    font-size: 1rem;
+}
+
+.box {
+    height: 400px;
+    width: 400px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    transition: transform 0.3s ease;
+}
+
+.box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+
+
+#width-one {
+    width: auto;
+}
+
+.hero4 {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    gap: 20px;
+    justify-content: center;
+    margin-bottom: 100px;
+}
+
+.hero4-node {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: white;
+    height: 400px;
+    width: 350px;
+
+    transition: transform 0.3s ease;
+}
+
+.hero4-node:hover {
+    transform: scale(1.05);
+    /* Slightly enlarge the box */
+    box-shadow: 0 8px 8px rgba(0, 0, 0, 0.2);
+    /* Darker shadow on hover */
+}
+
+.hero4-node-leaf {
+    margin: 20px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+footer {
+    height: auto;
+    width: 100%;
+    background-color: #f4f4f4;
+    /* Lighter background color for a cleaner look */
+    padding: 40px 0;
+    /* Add some padding for spacing */
+}
+
+.foot {
+    display: flex;
+    flex-wrap: wrap;
+    /* Allows items to wrap in smaller viewports */
+    justify-content: space-between;
+    max-width: 1200px;
+    /* Limiting the width for better alignment */
+    margin: 0 auto;
+    /* Center the footer */
+    padding: 0 20px;
+    /* Padding on sides for better spacing */
+}
+
+.foot-nodes {
+    flex: 1;
+    /* Allows flex items to grow and fill available space */
+    margin: 10px;
+    /* Adjusted margin for better spacing */
+    padding: 20px;
+    /* Padding inside each section */
+    background-color: #ffffff;
+    /* White background for each section */
+    border-radius: 8px;
+    /* Rounded corners for a softer look */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Subtle shadow for depth */
+}
+
+.foot-nodes h3 {
+    font-size: 1.5rem;
+    /* Larger font size for section titles */
+    margin-bottom: 15px;
+    /* Space below the heading */
+    color: #333;
+    /* Darker text color for better contrast */
+}
+
+.foot-nodes-leaf-child {
+    margin-bottom: 10px;
+    /* Space between items */
+    font-size: 1rem;
+    /* Consistent font size for readability */
+    color: #666;
+    /* Subtle text color */
+}
+
+.foot-nodes-leaf-child input[type="text"] {
+    width: 100%;
+    /* Full width input field */
+    padding: 10px;
+    /* Padding inside the input */
+    border: 1px solid #ccc;
+    /* Light border for the input field */
+    border-radius: 4px;
+    /* Rounded corners for the input */
+    box-sizing: border-box;
+    /* Ensures padding does not affect width */
+}
+
+.foot-nodes-leaf-child button {
+    width: 100%;
+    /* Full width button */
+    padding: 10px;
+    /* Padding inside the button */
+    background-color: #007bff;
+    /* Button background color */
+    border: none;
+    /* Remove default border */
+    border-radius: 4px;
+    /* Rounded corners for the button */
+    color: white;
+    /* Text color */
+    font-size: 1rem;
+    /* Font size */
+    cursor: pointer;
+    /* Pointer cursor on hover */
+    transition: background-color 0.3s;
+    /* Smooth background color transition */
+}
+
+.foot-nodes-leaf-child button:hover {
+    background-color: #0056b3;
+    /* Darker color on hover */
+}
+
+
+/* Basic styling for the sidebar */
+#sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 250px;
+    height: 100%;
+    background-color: #333;
+    color: white;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease;
+    z-index: 1000;
+    padding-top: 60px;
+    /* Adjust if needed */
+}
+
+#sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+#sidebar ul li {
+    margin: 20px 0;
+    text-align: center;
+}
+
+#sidebar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    display: block;
+}
+
+#sidebar ul li a:hover {
+    background-color: #575757;
+    padding: 10px;
+}
+
+/* Styling for the content area */
+.content {
+    margin-left: 250px;
+    transition: margin-left 0.3s ease;
+}
+
+/* Show the sidebar when active */
+#sidebar.active {
+    transform: translateX(0);
+}
+
+/* Adjust the content margin when sidebar is active */
+.content.active {
+    margin-left: 0;
+}
+
+/* Basic styling for the header */
+
+
+/* Basic styling for the sidebar */
+#sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 250px;
+    height: 100%;
+    background-color: white;
+    /* White background for the sidebar */
+    color: black;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease;
+    z-index: 1000;
+    padding-top: 60px;
+    /* Adjust if needed */
+}
+
+#sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+#sidebar ul li {
+    margin: 20px 0;
+    text-align: center;
+}
+
+#sidebar ul li a {
+    color: black;
+    text-decoration: none;
+    font-size: 1.2rem;
+    display: block;
+}
+
+#sidebar ul li a:hover {
+    background-color: #f0f0f0;
+    padding: 10px;
+}
+
+/* Adjust the content area */
+.content {
+    margin-left: 250px;
+    transition: margin-left 0.3s ease;
+}
+
+/* Show the sidebar when active */
+#sidebar.active {
+    transform: translateX(0);
+}
+
+/* Adjust the content margin when sidebar is active */
+.content.active {
+    margin-left: 0;
+}
+
+.mob {
+    display: none;
+}
+
+@media (max-width: 768px) {
+
+    .head {
+        height: 100px;
+        width: 100%;
+        background-color: white;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        top: 0;
+        z-index: 1000;
+        box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
+        position: relative;
+    }
+
+
+    .mob {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 100px;
+        height: 100px;
+        width: 100%;
+        background-color: #c8a164;
+        color: white;
+    }
+
+    #t1 {
+        display: none;
+    }
+
+    #t2 {
+        font-size: 1.4rem;
+        margin-top: 100px;
+        animation-delay: 0.6s;
+        /* Start after t1 */
+    }
+
+    #t3 {
+        display: none;
+    }
+
+    #button {
+        height: 30px;
+        width: 100px;
+        animation-delay: 1.2s;
+        /* Start after t3 */
+    }
+
+    .hero2 {
+        margin-top: 40px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        height: 600px;
+        width: 100%;
+    }
+
+    .box {
+        height: 180px;
+        width: 180px;
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        transition: transform 0.3s ease;
+    }
+
+    .mob-node {
+        margin: 10px;
+    }
+
+    .divin {
+        display: none;
+    }
+
+    .head-hero3 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 20px;
+    }
+
+    .hero3 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 35px;
+        margin: 20px;
+    }
+
+    .box-hero3 {
+        height: 350px;
+        width: 250px;
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        transition: transform 0.3s ease;
+    }
+
+    .hero4 {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        gap: 20px;
+        justify-content: center;
+        margin-bottom: 100px;
+    }
+
+    .hero4-node {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        background-color: white;
+        height: 400px;
+        width: 350px;
+
+        transition: transform 0.3s ease;
+    }
+
+
+    .hero4-node-leaf {
+        margin: 20px;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    #hero2-box-1pic {
+        height: 180px;
+        width: auto;
+        padding: 10px;
+    }
+
+    #hero2-box-2pic {
+        height: 180px;
+        width: auto;
+        padding: 10px;
+    }
+
+    #box-width-one {
+        margin: 10px;
+        height: 150px;
+        width: auto;
+    }
+
+    #box-nonwidth-one {
+        margin: 10px;
+        height: 150px;
+        width: auto;
+    }
+
+    .boxbox {
+        height: 300px;
+        background-color: white;
+        width: 100%;
+        margin: 20px;
+    }
+
+    .text {
+        display: none;
+    }
+
+    .ttext {
+        display: block;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+
+    .slider {
+        margin-top: 50px;
+        height: 100px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+    }
+
+    #slider-imgg {
+        width: 50%;
+        height: auto;
+    }
+
+    .ttext {
+        position: absolute;
+        left: 65%;
+        padding: 10px 20px;
+        transform: translateX(-50%);
+        text-align: center;
+    }
+
+    #tt2 {
+        font-size: 1rem;
+    }
+}
